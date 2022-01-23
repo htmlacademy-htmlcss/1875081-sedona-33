@@ -116,6 +116,15 @@
             <!--Ранжировку нужно разметить, не знаю как-->
             <fieldset class="filter">
               <legend class="filter-title">Стоимость, ₽:</legend>
+              <div class="filter-price">
+                  <input id="from" type="text" name="text" value="0" placeholder="от">
+                  <input id="before" type="text" name="text" value="9000" placeholder="до">
+              </div>
+
+              <div class="filter-price-controls">
+                  <label for="from"><span class="visually-hidden">От</span></label>
+                  <label for="before"><span class="visually-hidden">До</span></label>
+              </div>
             </fieldset>
             <div class="filters-buttons">
               <ul class="filters-buttons-list">
@@ -285,47 +294,3 @@
       </footer>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Вариант разметки формы с ползунком. Добавить или убрать - позже решим.
-<form action="">
-  <fieldset>
-    <legend>Стоимость, ₽:</legend>
-    <div>
-      <input id="from" type="text" name="text" value="0" placeholder="от">
-      <input id="before" type="text" name="text" value="9000" placeholder="до">
-    </div>
-
-    <div>
-      <label for="from"><span class="visually-hidden">От</span></label>
-      <label for="before"><span class="visually-hidden">До</span></label>
-    </div>
-  </fieldset>
-</form>
--->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
