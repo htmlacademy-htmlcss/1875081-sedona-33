@@ -10,7 +10,8 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo-link" href="index.html">
-            <img class="logo-image" src="./img/icons/logo.svg" alt="Логотип сайта Седона." width="139" height="70">
+            <p class="visually-hidden">Переход на главную страницу</p>
+            <img class="logo-image" src="./img/icons/" alt="Логотип сайта Седона." width="139" height="70">
           </a>
 
           <ul class="navigation-list">
@@ -49,7 +50,7 @@
       <section class="preview">
         <h1 class="visually-hidden">Курорт Седона</h1>
         <div class="preview-image-wrapper">
-          <img class="preview-image" src="./img/images/sedona_welcome.jpg" alt="Добро пожаловать в Седону." width="1200" height="485">
+          <img class="preview-image" src="./img/images/welcome.png" alt="Добро пожаловать в Седону." width="458" height="352">
         </div>
       </section>
 
@@ -134,7 +135,8 @@
         <p class="subscription-description">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" name="email" placeholder="Ваш e-mail">
+          <label class="visually-hidden" for="email">Ваш e-mail</label>
+          <input id="email" type="email" name="email" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
       </section>
