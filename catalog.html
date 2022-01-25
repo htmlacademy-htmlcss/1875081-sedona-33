@@ -12,6 +12,7 @@
       <div class="container">
         <nav class="navigation">
           <a class="logo-link" href="index.html">
+            <p class="visually-hidden">Переход на главную страницу</p>
             <img class="logo-image" src="./img/icons/logo.svg" alt="Логотип сайта Седона." width="139" height="70">
           </a>
 
@@ -55,8 +56,8 @@
             <h3 class="filters-header-title">Гостиницы Седоны</h3>
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
+                <span class="visually-hidden">Главная</span>
                 <a class="breadcrumbs-link" href="index.html">
-                  <span class="visually-hidden">Главная</span>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -144,19 +145,16 @@
             </select>
             <ul class="hotels-header-list">
               <li class="hotels-header-item">
-                <a href="#" class="hotels-header-link">
-                  <span class="visually-hidden">Показать карточки</span>
-                </a>
+                <span class="visually-hidden">Показать карточки</span>
+                <a href="#" class="hotels-header-link"></a>
               </li>
               <li class="hotels-header-item">
-                <a href="#" class="hotels-header-link">
-                  <span class="visually-hidden">Показать слайдшоу</span>
-                </a>
+                <span class="visually-hidden">Показать слайдшоу</span>
+                <a href="#" class="hotels-header-link"></a>
               </li>
               <li class="hotels-header-item">
-                <a href="#" class="hotels-header-link">
-                  <span class="visually-hidden">Показать список</span>
-                </a>
+                <span class="visually-hidden">Показать список</span>
+                <a href="#" class="hotels-header-link"></a>
               </li>
             </ul>
           </header>
@@ -255,7 +253,8 @@
           <p class="subscription-description">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
-            <input type="email" name="email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="email">Ваш e-mail</label>
+            <input id="email" type="email" name="email" placeholder="Ваш e-mail">
             <button type="submit">Подписаться</button>
           </form>
         </section>
@@ -265,23 +264,21 @@
         <div class="container">
           <ul class="social-list">
             <li class="social-item">
-              <a class="social-link" href="https://twitter.com/htmlacademy_ru">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
+              <span class="visually-hidden">Твиттер</span>
+              <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru"></a>
             </li>
             <li class="social-item">
-              <a class="social-link" href="https://www.facebook.com/htmlacademy">
-                <span class="visually-hidden">Фейсбук</span>
-              </a>
+              <span class="visually-hidden">Фейсбук</span>
+              <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy"></a>
               </li>
             <li class="social-item">
-              <a class="social-link" href="https://www.youtube.com/c/HTMLAcademyRUS">
-                <span class="visually-hidden">Ютуб</span>
-              </a>
+              <span class="visually-hidden">Ютуб</span>
+              <a class="social-link social-link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS"></a>
             </li>
           </ul>
           <a class="tel-academy" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <a class="logo-academy" href="https://htmlacademy.ru/">
+            <span class="visually-hidden">Перейти на сайт HTML Academy</span>
             <img class="logo-academy-img" src="./img/icons/logo_htmlacademy.png" alt="Логотип HTML Academy" width="115" height="34">
           </a>
         </div>
