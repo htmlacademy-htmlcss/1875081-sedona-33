@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body>
     <!--Шапка с навигацией-->
@@ -40,7 +41,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+              <a class="navigation-link user-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -60,7 +61,7 @@
       <section class="advantages">
         <h2 class="advantages-title title">Седона — небольшой городок в Аризоне,
           заслуживающий большего!</h2>
-        <p class="advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="page-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
         <ol class="advantages-list">
           <li class="advantages-item">
             <div class="advantage-wrapper">
@@ -72,20 +73,20 @@
             </div>
             <img class="advantage-image" src="./images/content/advantages-city.jpg" width="800" height="384" alt="Красивый вид на Седону.">
             <!--Список внутри первого пункта списка-->
-            <ul class="reasons-list">
+            <ul class="advantages-list">
               <li class="reasons-item">
-                <h4 class="reasons-title">Жильё</h4>
-                <p class="reasons-description">Рекомендуем пожить
+                <h4 class="advantages-title">Жильё</h4>
+                <p class="advantsges-description">Рекомендуем пожить
                   в настоящем мотеле,
                   всё как в кино!</p>
               </li>
               <li class="reasons-item">
-                <h4 class="reasons-title">Еда</h4>
+                <h4 class="advantages-title">Еда</h4>
                 <p class="reasons-description">Всегда заказывайте
                   топовый фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="reasons-item">
-                <h4 class="reasons-title">Сувениры</h4>
+                <h4 class="advantages-title">Сувениры</h4>
                 <p class="reasons-description">Не только китайского,
                   но и настоящего местного производства!</p>
               </li>
@@ -125,7 +126,7 @@
       <section class="search-hotels">
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="title">Заинтересовались?</p>
-        <p class="search-description">Укажите предполагаемые даты поездки,
+        <p class="page-text">Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         <a class="search-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
@@ -134,12 +135,12 @@
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="title">Подпишитесь на рассылку</p>
-        <p class="subscription-description">Только полезная информация и никакого спама,
+        <p class="page-text">Только полезная информация и никакого спама,
           честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="email">Ваш e-mail</label>
-          <input id="email" type="email" name="email" placeholder="Ваш e-mail">
-          <button type="submit">Подписаться</button>
+          <input class="email-field" id="email" type="email" name="email" placeholder="Ваш e-mail">
+          <button class="button button-mail" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
