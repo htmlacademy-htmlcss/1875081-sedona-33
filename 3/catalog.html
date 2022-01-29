@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="./styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1875081-sedona-33/3/">
 </head>
   <body>
@@ -41,7 +42,7 @@
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+              <a class="navigation-link user-link" href="#">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -224,22 +225,22 @@
 
           <ul class="pagination">
             <li class="pagination-item">
-              <a href="" class="pagination-link">1</a>
+              <a href="#" class="pagination-link active">1</a>
             </li>
             <li class="pagination-item">
-              <a href="" class="pagination-link">2</a>
+              <a href="#" class="pagination-link">2</a>
             </li>
             <li class="pagination-item">
-              <a href="" class="pagination-link">3</a>
+              <a href="#" class="pagination-link">3</a>
             </li>
             <li class="pagination-item">
-              <a href="" class="pagination-link">4</a>
+              <a href="#" class="pagination-link">4</a>
             </li>
             <li class="pagination-item">
-              <a href="" class="pagination-link">...</a>
+              <a href="#" class="pagination-link">...</a>
             </li>
             <li class="pagination-item">
-              <a href="" class="pagination-link">10</a>
+              <a href="#" class="pagination-link">10</a>
             </li>
           </ul>
 
@@ -252,15 +253,15 @@
           </label>
         </section>
         <!--Секция подписка на рассылку-->
-        <section class="subscription">
+        <section class="subscription catalog-subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <b class="title">Подпишитесь на рассылку</b>
-          <p class="subscription-description">Только полезная информация и никакого спама,
-          честное бойскаутское!</p>
+          <p class="title">Подпишитесь на рассылку</p>
+          <p class="page-text">Только полезная информация и никакого спама,
+            честное бойскаутское!</p>
           <form action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
-            <input id="email" type="email" name="email" placeholder="Ваш e-mail">
-            <button type="submit">Подписаться</button>
+            <input class="email-field catalog-email-field" id="email" type="email" name="email" placeholder="Ваш e-mail">
+            <button class="button button-mail" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
