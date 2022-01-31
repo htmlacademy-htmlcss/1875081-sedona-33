@@ -28,7 +28,8 @@
 }
 
 body {
-  margin: 0;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
@@ -61,9 +62,8 @@ body {
 .preview {
   min-height: 485px;
   background-color: #83B3D333;
-  background-image: url("../images/background/index-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url("../images/background/index-divider.png") no-repeat 0 428px,
+  url("../images/background/index-background.jpg") no-repeat 0 0;
 }
 
 .preview-image-wrapper {
