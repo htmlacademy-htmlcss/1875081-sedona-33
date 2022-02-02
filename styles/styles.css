@@ -305,7 +305,7 @@ body {
   background-color: #83B3D3;
 }
 
-.active-pagination-link {
+.pagination-link-active {
   color: #000000;
   background-color: #F2F2F2;
 }
