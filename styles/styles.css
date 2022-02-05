@@ -14,6 +14,26 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+  /* background: #E5E5E5; */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  padding: 0 10px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  background: #E5E5E5;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,16 +47,37 @@
   overflow: hidden;
 }
 
-body {
-  max-width: 1200px;
+.page-container {
+  width: 1200px;
   margin: 0 auto;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #000000;
   background: #ffffff;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+.logo-link {
+  margin-right: 30px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list-links {
+  min-width: 345px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .navigation-item {
@@ -44,6 +85,8 @@ body {
 }
 
 .navigation-link {
+  box-sizing: border-box;
+  padding: 20px 0 18px 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -51,25 +94,100 @@ body {
   color: inherit;
 }
 
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+
+.user-list {
+  margin-left: auto;
+  min-width: 264px;
+}
+
 .user-link {
+  margin-left: 20px;
+  padding: 9px 35px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   background: #756257;
+  border-radius: 4px;
+}
+
+.navigation-link-search {
+  display: block;
+  width: 42px;
+  height: 66px;
+  background: url("../images/icons/search.svg") no-repeat center;
+}
+
+.navigation-link-favourites {
+  display: block;
+  width: 42px;
+  height: 66px;
+  background: url("../images/icons/favorite.svg") no-repeat center;
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .preview {
+  margin-top: -5px;
+  margin-bottom: 63px;
   min-height: 485px;
   background: url("../images/background/index-divider.svg") no-repeat 0 429px,
   url("../images/background/index-background.jpg") no-repeat 0 0 #83B3D333;
 }
 
 .preview-image-wrapper {
+  padding-top: 51px;
   text-align: center;
 }
 
+.advantages {
+  margin-bottom: 91px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.page-text {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  padding: 0 30px;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  margin: 0;
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-title {
+  width: 175px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .title {
+  width: 720px;
+  margin: 0 auto;
+  margin-bottom: 31px;
+  padding: 0 30px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -77,26 +195,13 @@ body {
   text-align: center;
 }
 
-.page-text {
-  font-size: 22px;
-  line-height: 36px;
-  text-align: center;
+.advantages-number {
+  margin-bottom: 30px;
 }
 
-.advantages-list {
-  list-style: none;
-  text-align: center;
-}
-
-.advantages-item {
-  background: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 700;
-  text-transform: uppercase;
+.advantages-description {
+  width: 250px;
+  margin: 0 auto;
 }
 
 .advantage-wrapper {
@@ -104,15 +209,61 @@ body {
   background: #83B3D3;
 }
 
-.reasons-item-food {
-  background: #ffffff;
-}
-
 .advantages-item-road {
   background: rgba(131, 179, 211, 0.2);
 }
 
+.advantage-list-child {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  list-style: none;
+}
+
+.reasons-item {
+  position: relative;
+  padding: 184px 75px 79px 75px;
+  width: 400px;
+  height: 384px;
+  background: rgba(131, 179, 211, 0.12);
+  box-sizing: border-box;
+}
+
+.reasons-item::before {
+  content: "";
+  position: absolute;
+  top: 89px;
+  left: 163px;
+  display: block;
+  width: 75px;
+  height: 72px;
+  background: url("../images/icons/icon-house.svg") no-repeat;
+}
+
+.reasons-item-food {
+  background: #ffffff;
+}
+
+.reasons-item-food::before {
+  background: url("../images/icons/icon-eat.svg") no-repeat;
+}
+
+.reasons-item-gift::before {
+  height: 76px;
+  background: url("../images/icons/icon-gift.svg") no-repeat;
+}
+
+.search-text {
+  margin-bottom: 56px;
+}
+
 .search-link {
+  display: block;
+  width: 575px;
+  margin: 0 auto;
+  margin-bottom: 93px;
+  padding: 20px 0;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -120,22 +271,38 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   background: #756257;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .subscription {
-  min-height: 411px;
+  padding-top: 94px;
+  padding-bottom: 93px;
+  margin-bottom: 40px;
   color: #ffffff;
-  background: url("../images/background/background-mailing.jpg") no-repeat #83B3D3;
+  background: url("../images/background/background-mailing.jpg") no-repeat #83B3D3 100% 100% / cover;
+}
+
+.subscription-text {
+  width: 476px;
+  margin-bottom: 46px;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
 }
 
 .email-field {
-  width: 600px;
+  width: 598px;
   height: 60px;
   background: #ffffff;
   border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .email-field::placeholder {
+  padding-left: 22px;
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -144,6 +311,7 @@ body {
 }
 
 .button-mail {
+  padding: 0 23px;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
@@ -152,6 +320,14 @@ body {
   text-transform: uppercase;
   background: #83B3D3;
   border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .social-list {
@@ -161,12 +337,6 @@ body {
   height: 18px;
   margin: 0;
   list-style: none;
-}
-
-.social-item {
-  width: 18px;
-  height: 15px;
-  background: #83B3D3;
 }
 
 .tel-academy {
@@ -180,8 +350,8 @@ body {
 
 .filters {
   min-height: 408px;
-  background: url("../images/background/catalog-background.jpg") no-repeat #83B3D3;
-  background-size: cover;
+  background: #83B3D3 url("../images/background/catalog-background.jpg") no-repeat 100% 100% / cover;
+
   color: #ffffff;
 }
 
