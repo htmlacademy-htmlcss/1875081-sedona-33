@@ -179,7 +179,7 @@
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">
-                <span class="visually-hidden">Четыре звезды.</span>
+                <p class="rating-stars"><span class="visually-hidden">Четыре звезды.</span></p>
                 <p class="rating-text">Рейтинг: 8,5</p>
               </div>
             </li>
@@ -195,7 +195,7 @@
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">
-                <span class="visually-hidden">Три звезды.</span>
+                <p class="rating-stars"><span class="visually-hidden">Три звезды.</span></p>
                 <p class="rating-text">Рейтинг: 8,9</p>
               </div>
             </li>
@@ -211,7 +211,7 @@
                 <button class="card-button favourites favourite-button" type="button">В избранное</button>
               </div>
               <div class="rating">
-                <span class="visually-hidden">Две звезды.</span>
+                <p class="rating-stars"><span class="visually-hidden">Две звезды.</span></p>
                 <p class="rating-text">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -227,7 +227,7 @@
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">
-                <span class="visually-hidden">Две звезды.</span>
+                <p class="rating-stars"><span class="visually-hidden">Две звезды.</span></p>
                 <p class="rating-text">Рейтинг: 9,2</p>
               </div>
             </li>
@@ -236,40 +236,42 @@
             <a class="upload-link" href="#">Загрузить ещё</a>
           </div>
 
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a href="#" class="pagination-link pagination-link-active">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">...</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">10</a>
-            </li>
-          </ul>
+          <div class="sorting-pagination">
+            <ol class="pagination">
+              <li class="pagination-item">
+                <a href="#" class="pagination-link pagination-link-active">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">...</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">10</a>
+              </li>
+            </ol>
 
-          <label class="quantity-hotels">Гостиниц на странице:
-            <select class="select-control control-quantity" aria-label="Сортировка">
-              <option value="4">4</option>
-              <option value="8">8</option>
-              <option value="12">12</option>
-            </select>
-          </label>
+            <label class="quantity-hotels">Гостиниц на странице:
+              <select class="select-control control-quantity" aria-label="Сортировка">
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="12">12</option>
+              </select>
+            </label>
+          </div>
         </section>
         <!--Секция подписка на рассылку-->
         <section class="subscription catalog-subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="title">Подпишитесь на рассылку</p>
-          <p class="page-text">Только полезная информация и никакого спама,
+          <p class="title subscription-title">Подпишитесь на рассылку</p>
+          <p class="page-text subscription-text">Только полезная информация и никакого спама,
             честное бойскаутское!</p>
           <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="email">Ваш e-mail</label>
