@@ -158,23 +158,31 @@ body {
   margin-bottom: 80px;
   padding: 0 30px;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 26px;
   text-align: center;
 }
 
 .advantages-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .advantages-item {
+  flex-grow: 1;
   margin: 0;
   background: rgba(131, 179, 211, 0.12);
 }
 
+.advantage-item {
+  padding-top: 98px;
+  padding-bottom: 108px;
+}
+
 .advantages-title {
-  width: 175px;
+  width: 172px;
   margin: 0 auto;
   margin-bottom: 30px;
   font-size: 24px;
@@ -205,8 +213,15 @@ body {
 }
 
 .advantage-wrapper {
+  flex-grow: 1;
+  padding-top: 98px;
+  padding-bottom: 86px;
   color: #ffffff;
   background: #83B3D3;
+}
+
+.advantage-container {
+  display: flex;
 }
 
 .advantages-item-road {
@@ -252,6 +267,10 @@ body {
 .reasons-item-gift::before {
   height: 76px;
   background: url("../images/icons/icon-gift.svg") no-repeat;
+}
+
+.subscription-title {
+  margin-bottom: 46px;
 }
 
 .search-text {
@@ -523,7 +542,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: -18px;
   margin-bottom: 34px;
   padding: 0;
   list-style: none;
@@ -532,23 +550,27 @@ body {
 .cards-item {
   display: flex;
   flex-direction: column;
-  margin-left: 18px;
-  width: 340px;
+  margin: 0;
+  margin-right: 18px;
+  margin-bottom: 10px;
+  padding: 20px;
   background: #ffffff;
+}
+
+.cards-item:nth-child(3) {
+  margin-right: 0;
 }
 
 .card-image {
   display: block;
   margin: 0 auto;
   margin-bottom: 16px;
-  margin-top: 20px;
   order: -1;
 }
 
 .card-title {
   margin: 0;
   margin-bottom: 16px;
-  margin-left: 18px;
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
@@ -557,7 +579,6 @@ body {
 
 .card-description {
   display: flex;
-  margin-left: 18px;
   margin-bottom: 16px;
 }
 
@@ -572,7 +593,7 @@ body {
 .card-buttons {
   display: flex;
   justify-content: space-between;
-  margin-left: 18px;
+  margin-bottom: 16px;
   width: 300px;
 }
 
@@ -602,18 +623,19 @@ body {
   display: flex;
   align-items: center;
   width: 300px;
-  margin-left: 18px;
 }
 
 .rating-stars {
+  margin: 0;
   width: 91px;
   height: 17px;
   border: 1px solid #F2F2F2;
 }
 
 .rating-text {
+  margin: 0;
   margin-left: auto;
-  padding: 10px 30px;
+  padding: 8px 33px;
   background: #F2F2F2;
   border-radius: 4px;
 }
@@ -688,6 +710,7 @@ body {
 }
 
 .catalog-subscription {
+  padding-top: 73px;
   color: #000000;
   background: #ffffff;
 }
