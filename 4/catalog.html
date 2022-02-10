@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <base href="https://htmlacademy-htmlcss.github.io/1875081-sedona-33/4/">
 </head>
-  <body>
-    <div class="page-container">
+  <body class="page-container">
     <!--Шапка с навигацией-->
     <header class="page-header">
       <nav class="navigation container">
@@ -18,7 +17,7 @@
           <img class="logo-image" src="./images/content/logo.svg" width="139" height="70" alt="Логотип сайта Седона.">
         </a>
 
-        <ul class="navigation-list navigation-list-links">
+        <ul class="navigation-list navigation-list-links reset-list">
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
@@ -30,18 +29,18 @@
           </li>
         </ul>
 
-        <ul class="navigation-list user-list">
-          <li class="navigation-item">
+        <ul class="navigation-list user-list reset-list">
+          <li class="user-item">
             <a class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">Поиск по сайту</span>
             </a>
             </li>
-          <li class="navigation-item">
+          <li class="user-item">
             <a class="navigation-link navigation-link-favourites" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
+          <li class="user-item">
             <a class="navigation-link user-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -56,7 +55,7 @@
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
           <header class="filters-header">
             <h3 class="filters-header-title">Гостиницы Седоны</h3>
-            <ul class="breadcrumbs">
+            <ul class="breadcrumbs reset-list">
               <li class="breadcrumbs-item">
                 <span class="visually-hidden">Главная</span>
                 <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
@@ -75,30 +74,24 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filter">
               <legend class="filter-title">Инфраструктура:</legend>
-              <ul class="filter-list">
+              <ul class="filter-list reset-list">
                 <li class="filter-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="checkbox" value="Бассейн" checked>
-                    Бассейн
-                  </label>
+                  <input class="control-input" id="pool" type="checkbox" name="checkbox" value="Бассейн" checked>
+                  <label class="control" for="pool">Бассейн</label>
                 </li>
                 <li class="filter-item">
-                  <label>
-                    <input type="checkbox" name="checkbox" value="Парковка" checked>
-                    Парковка
-                  </label>
+                    <input type="checkbox" id="parking" name="checkbox" value="Парковка" checked>
+                    <label class="control" for="parking">Парковка</label>
                 </li>
                 <li class="filter-item">
-                  <label>
-                    <input type="checkbox" name="checkbox" value="Wi-Fi">
-                    Wi-Fi
-                  </label>
+                    <input type="checkbox" id="wifi" name="checkbox" value="Wi-Fi">
+                    <label class="control" for="wifi">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="filter">
               <legend class="filter-title">Тип жилья:</legend>
-              <ul class="filter-list">
+              <ul class="filter-list reset-list">
                 <li class="filter-item">
                   <label>
                     <input type="radio" name="radio" value="Гостиница" checked>
@@ -150,7 +143,7 @@
               <option value="popular">Сначала популярные</option>
               <option value="expensive">Сначала дорогие</option>
             </select>
-            <ul class="hotels-header-list">
+            <ul class="hotels-header-list reset-list">
               <li class="hotels-header-item">
                 <span class="visually-hidden">Показать карточки</span>
                 <a href="#" class="hotels-header-link"></a>
@@ -166,7 +159,7 @@
             </ul>
           </header>
 
-          <ul class="cards-list">
+          <ul class="cards-list reset-list">
             <li class="cards-item">
               <h3 class="card-title">Amara Resort & Spa</h3>
               <img class="card-image" src="./images/content/hotel-amara.jpg" width="300" height="206" alt="Amara Resort & Spa.">
@@ -237,7 +230,7 @@
           </div>
 
           <div class="sorting-pagination">
-            <ol class="pagination">
+            <ol class="pagination reset-list">
               <li class="pagination-item">
                 <a href="#" class="pagination-link pagination-link-active">1</a>
               </li>
@@ -270,7 +263,7 @@
         <!--Секция подписка на рассылку-->
         <section class="subscription catalog-subscription">
           <h2 class="visually-hidden">Подписка на рассылку</h2>
-          <p class="title subscription-title">Подпишитесь на рассылку</p>
+          <p class="title title-subscription">Подпишитесь на рассылку</p>
           <p class="page-text subscription-text">Только полезная информация и никакого спама,
             честное бойскаутское!</p>
           <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -281,46 +274,48 @@
         </section>
       </main>
           <!--Подвал-->
-    <footer class="page-footer container">
-      <ul class="social-list">
-        <li class="social-item">
-          <span class="visually-hidden">Твиттер</span>
-          <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
-            <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" fill="#83B3D3"/>
-            </svg>
-          </a>
-        </li>
-        <li class="social-item">
-          <span class="visually-hidden">Фейсбук</span>
-          <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy">
-            <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="#83B3D3"/>
-            </svg>
-          </a>
+    <footer class="container">
+      <div class="page-footer">
+        <ul class="social-list reset-list">
+          <li class="social-item">
+            <span class="visually-hidden">Твиттер</span>
+            <a class="social-link social-link-twitter" href="https://twitter.com/htmlacademy_ru">
+              <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.6 0.200056C13.4 -0.299944 14.8 0.500056 15.4 1.40006C16.1 1.20006 16.8 0.900056 17.5 0.700056C17.5 1.60006 16.9 2.20006 16.6 2.50006C17.3 2.60006 18 1.90006 18 1.90006C17.8 2.90006 16.9 3.70006 16.3 3.90006C16.1 10.7001 13 15.1001 5.7 15.0001C5.1 15.0001 5.8 15.0001 5.2 15.0001C4.8 15.0001 0.8 14.5001 0 13.1001C2.4 13.3001 4.1 12.7001 5 11.9001C4 11.6001 2.1 11.5001 1.8 9.00006C2.2 9.10006 2.4 9.20006 3.1 9.10006C1.8 8.30006 0.4 7.50006 0.5 5.30006C0.8 5.60006 1.6 5.80006 1.9 5.80006C1.1 5.60006 -0.2 2.50006 0.9 0.900056C2.8 2.80006 4.9 4.50006 8.5 4.70006C8.7 2.30006 9.7 0.800056 11.6 0.200056Z" fill="#83B3D3"/>
+              </svg>
+            </a>
           </li>
-        <li class="social-item">
-          <span class="visually-hidden">Ютуб</span>
-          <a class="social-link social-link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#clip0_24196_686)">
-              <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
-              </g>
-              <defs>
-              <clipPath id="clip0_24196_686">
-              <rect width="20" height="16" fill="white"/>
-              </clipPath>
-              </defs>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a class="tel-academy" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="logo-academy" href="https://htmlacademy.ru/">
-        <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
-        <img class="logo-academy-img" src="./images/content/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
-      </a>
+          <li class="social-item">
+            <span class="visually-hidden">Фейсбук</span>
+            <a class="social-link social-link-facebook" href="https://www.facebook.com/htmlacademy">
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0C4.8 0 3 1.8 3 4V6H0V10H3V18H7V10H10V6H7V4H10V0H7Z" fill="#83B3D3"/>
+              </svg>
+            </a>
+            </li>
+          <li class="social-item">
+            <span class="visually-hidden">Ютуб</span>
+            <a class="social-link social-link-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_24196_686)">
+                <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2V12.7C0 14.5 1.2 16 2.9 16H17.2C18.7 16 20.1 14.5 20.1 12.8V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8L7 11.8Z" fill="#83B3D3"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_24196_686">
+                <rect width="20" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="tel-academy" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="logo-academy" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">Перейти на сайт HTML Academy.</span>
+          <img class="logo-academy-img" src="./images/content/logo_htmlacademy.svg" width="115" height="34" alt="Логотип HTML Academy.">
+        </a>
+      </div>
   </footer>
-    </div>
+
   </body>
 </html>
