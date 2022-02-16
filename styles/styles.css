@@ -68,6 +68,88 @@ body {
   margin: 0 auto;
 }
 
+/* МОДАЛЬНОЕ ОКНО */
+.fixed-overlay {
+  display: none;
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 62px 70px 70px 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.modal-container {
+  width: 575px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.modal-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.modal-button {
+  position: relative;
+  width: 53px;
+  height: 53px;
+  border: none;
+  border-radius: 50%;
+  background: #F2F2F2;
+}
+
+.modal-button::before {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: url("../images/icons/icon-cross.svg") no-repeat center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.modal-input {
+  padding: 5px 19px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
 .page-header {
   position: relative;
   z-index: 10;
@@ -554,7 +636,7 @@ body {
 
 .filters {
   padding-top: 41px;
-  padding-bottom: 81px;
+  padding-bottom: 84px;
   background: #83B3D3 url("../images/background/catalog-background.jpg") no-repeat;
   color: #ffffff;
 }
@@ -585,7 +667,7 @@ body {
 
 .breadcrumbs-link-home {
   position: relative;
-  padding: 0 5px;
+  /* padding: 0 5px; */
   margin-right: 26px;
 }
 
@@ -604,11 +686,11 @@ body {
   opacity: 0.6;
 }
 
-  .breadcrumbs-link:focus-within {
+/* .breadcrumbs-link:focus-within {
   outline: 3px solid #83B3D3;
   box-sizing: border-box;
   border-radius: 4px;
-}
+} */
 
 .breadcrumbs-link:active {
   opacity: 0.3;
@@ -629,7 +711,7 @@ body {
 }
 
 .filter:nth-child(2) {
-  margin-right: 184px;
+  margin-right: 169px;
 }
 
 .filter:nth-child(3) {
@@ -637,14 +719,49 @@ body {
 }
 
 .filter-title {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
 }
 
 .filter-item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 14px;
+}
+
+.control-input {
+  display: none;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 39px;
+}
+
+.control::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control-active::before {
+  background: #FFFFFF url("../images/icons/icon-checkbox.svg") no-repeat center;
+}
+
+.control-type::before {
+  border-radius: 50%;
+}
+
+.control-active-type::before {
+  background: #FFFFFF url("../images/icons/icon-radio.svg") no-repeat center;
 }
 
 .filter-price {
@@ -793,7 +910,7 @@ body {
 .hotels-header {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 53px;
 }
 
 .hotels-title {
@@ -822,6 +939,18 @@ body {
   appearance: none;
 }
 
+.select-control:hover {
+  border: 2px solid #83B3D3;
+}
+
+.select-control:focus-within {
+  outline: 2px solid #83B3D3;
+}
+
+.select-control:active {
+  border: 2px solid #E6E6E6;
+  opacity: 0.3;
+}
 
 .hotels-header-list {
   display: grid;
@@ -845,6 +974,14 @@ body {
   border: 2px solid #000000;
 }
 
+.hotels-header-link:hover {
+  border: 2px solid #83B3D3;
+}
+
+.hotels-header-link:focus-within {
+  outline: 2px solid #83B3D3;
+}
+
 .hotels-header-link-cards {
   background: url("../images/icons/icon-cards.svg") no-repeat center;
 }
@@ -859,37 +996,38 @@ body {
 
 .cards-list {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 12px;
-  row-gap: 13px;
+  grid-template-columns: repeat(3, 340px);
+  gap: 8px 18px;
   margin-bottom: 28px;
 }
 
 .cards-item {
   display: flex;
   flex-direction: column;
-  width: 300px;
   padding: 20px;
   background: #ffffff;
+  box-sizing: border-box;
 }
 
-.card-image {
-  display: block;
-  width: 300px;
-  height: 206px;
+.card-link-image {
   margin-bottom: 16px;
   order: -1;
 }
 
-.card-image:hover {
+.card-image {
+  vertical-align: bottom;
+}
+
+.card-link-image:hover {
   opacity: 0.6;
 }
 
-.card-image:focus-within {
+.card-link-image:focus-within {
   outline: 3px solid #83B3D3;
 }
 
-.card-image:active {
+.card-link-image:active {
+  outline: none;
   opacity: 0.3;
 }
 
@@ -908,11 +1046,11 @@ body {
 }
 
 .card-name {
-  width: 158px;
+  width: 159px;
 }
 
 .card-price {
-  width: 142px;
+  width: 141px;
 }
 
 .card-buttons {
@@ -934,13 +1072,58 @@ body {
   border-radius: 4px;
 }
 
+.card-link:hover {
+  background: #615048;
+}
+
+.card-link:focus-within {
+  outline: 3px solid #83B3D3;
+}
+
+.card-link:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .favourites {
   border: none;
   background: #83B3D3;
 }
 
+.favourites:hover {
+  background: #68A2CA;
+  outline: 1px solid #756257;
+}
+
+.favourites:focus-within {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.favourites:active {
+  background: #68A2CA;
+  outline: 1px solid #756257;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .favourite-button {
   background: #7DB54F;
+}
+
+.favourite-button:hover {
+  outline: none;
+  background: #6C9E42;
+}
+
+.favourite-button:focus-within {
+  background: #6C9E42;
+  outline: 3px solid #756257;
+  color: #FFFFFF;
+}
+
+.favourite-button:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
@@ -1009,7 +1192,7 @@ body {
   box-sizing: border-box;
   width: 55px;
   height: 55px;
-  padding: 17px 0;
+  padding: 16px 0;
   font-size: 20px;
   line-height: 25px;
   font-weight: 700;
@@ -1019,6 +1202,21 @@ body {
   background: #83B3D3;
   border-radius: 4px;
   text-align: center;
+}
+
+.pagination-link:hover {
+  background: #68A2CA;
+}
+
+.pagination-link:focus-within {
+  background: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.pagination-link:active {
+  background: #68A2CA;
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-link-active {

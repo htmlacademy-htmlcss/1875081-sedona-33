@@ -83,14 +83,14 @@
               <ul class="filter-list reset-list">
                 <li class="filter-item">
                   <input class="control-input" id="pool" type="checkbox" name="checkbox" value="Бассейн" checked>
-                  <label class="control" for="pool">Бассейн</label>
+                  <label class="control control-active" for="pool">Бассейн</label>
                 </li>
                 <li class="filter-item">
-                    <input type="checkbox" id="parking" name="checkbox" value="Парковка" checked>
-                    <label class="control" for="parking">Парковка</label>
+                    <input class="control-input" type="checkbox" id="parking" name="checkbox" value="Парковка" checked>
+                    <label class="control control-active" for="parking">Парковка</label>
                 </li>
                 <li class="filter-item">
-                    <input type="checkbox" id="wifi" name="checkbox" value="Wi-Fi">
+                    <input class="control-input" type="checkbox" id="wifi" name="checkbox" value="Wi-Fi">
                     <label class="control" for="wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -99,22 +99,16 @@
               <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-list reset-list">
                 <li class="filter-item">
-                  <label>
-                    <input type="radio" name="radio" value="Гостиница" checked>
-                    Гостиница
-                  </label>
+                  <input class="control-input" type="radio" id="hotel" name="radio" value="Гостиница" checked>
+                  <label class="control control-type control-active-type" for="hotel">Гостиница</label>
                 </li>
                 <li class="filter-item">
-                  <label>
-                    <input type="radio" name="radio" value="Мотель">
-                    Мотель
-                  </label>
+                  <input class="control-input" type="radio" id="motel" name="radio" value="Мотель">
+                  <label class="control control-type" for="motel">Мотель</label>
                 </li>
                 <li class="filter-item">
-                  <label>
-                    <input type="radio" name="radio" value="Апартаменты">
-                    Апартаменты
-                  </label>
+                  <input class="control-input" type="radio" id="apartamert" name="radio" value="Апартаменты">
+                  <label class="control control-type" for="apartamert">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -168,13 +162,15 @@
           <ul class="cards-list reset-list">
             <li class="cards-item">
               <h3 class="card-title">Amara Resort & Spa</h3>
-              <img class="card-image" src="./images/content/hotel-amara.jpg" width="300" height="206" tabindex="0" alt="Amara Resort & Spa.">
+              <a href="#" class="card-link-image">
+                <img class="card-image" src="./images/content/hotel-amara.jpg" width="300" height="206" alt="Amara Resort & Spa.">
+              </a>
               <div class="card-description">
                 <span class="card-name">Гостиница</span>
                 <span class="card-price">От 4000 ₽</span>
               </div>
               <div class="card-buttons">
-                <a class="card-button card-link" href="#">подробнее</a>
+                <a class="card-button card-link" href="#">Подробнее</a>
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">
@@ -184,13 +180,15 @@
             </li>
             <li class="cards-item">
               <h3 class="card-title">Desert Quail Inn</h3>
-              <img class="card-image" src="./images/content/hotel-desert.jpg" width="300" height="206" tabindex="0" alt="Desert Quail Inn.">
+              <a href="#" class="card-link-image">
+                <img class="card-image" src="./images/content/hotel-desert.jpg" width="300" height="206" alt="Desert Quail Inn.">
+              </a>
               <div class="card-description">
                 <span class="card-name">Гостиница</span>
                 <span class="card-price">От 3000 ₽</span>
               </div>
               <div class="card-buttons">
-                <a class="card-button card-link" href="#">подробнее</a>
+                <a class="card-button card-link" href="#">Подробнее</a>
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">
@@ -200,14 +198,16 @@
             </li>
             <li class="cards-item">
               <h3 class="card-title">Villas at Poco Diablo</h3>
-              <img class="card-image" src="./images/content/hotel-villas.jpg" width="300" height="206" tabindex="0" alt="Villas at Poco Diablo.">
+              <a href="#" class="card-link-image">
+                <img class="card-image" src="./images/content/hotel-villas.jpg" width="300" height="206" alt="Villas at Poco Diablo.">
+              </a>
               <div class="card-description">
                 <span class="card-name">Гостиница</span>
                 <span class="card-price">От 2000 ₽</span>
               </div>
               <div class="card-buttons">
-                <a class="card-button card-link" href="#">подробнее</a>
-                <button class="card-button favourites favourite-button" type="button">В избранное</button>
+                <a class="card-button card-link" href="#">Подробнее</a>
+                <button class="card-button favourites favourite-button" type="button">В избранном</button>
               </div>
               <div class="rating">
                 <p class="rating-stars"><span class="visually-hidden">Две звезды.</span></p>
@@ -216,13 +216,15 @@
             </li>
             <li class="cards-item">
               <h3 class="card-title">GreenTree Inn</h3>
-              <img class="card-image" src="./images/content/hotel-greentree.jpg" width="300" height="206" tabindex="0" alt="GreenTree Inn.">
+              <a href="#" class="card-link-image">
+                <img class="card-image" src="./images/content/hotel-greentree.jpg" width="300" height="206" alt="GreenTree Inn.">
+              </a>
               <div class="card-description">
                 <span class="card-name">Гостиница</span>
                 <span class="card-price">От 3000 ₽</span>
               </div>
               <div class="card-buttons">
-                <a class="card-button card-link" href="#">подробнее</a>
+                <a class="card-button card-link" href="#">Подробнее</a>
                 <button class="card-button favourites" type="button">В избранное</button>
               </div>
               <div class="rating">

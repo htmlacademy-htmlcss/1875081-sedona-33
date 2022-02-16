@@ -51,6 +51,45 @@
           </li>
         </ul>
       </nav>
+      <!-- МОДАЛЬНОЕ ОКНО -->
+      <div class="fixed-overlay">
+        <div class="modal-window">
+          <div class="modal-container">
+            <div class="modal-header">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+              <button class="modal-button" type="button">
+                <span class="visually-hidden">Закрыть окно поиска гостиницы в Седоне.</span>
+              </button>
+            </div>
+            <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="modal-name">
+                Дата заезда:
+                <input class="modal-input" type="text" name="date" placeholder="27 апреля 2020">
+              </label>
+
+              <label class="modal-name">
+                Дата выезда:
+                <input class="modal-input" type="text" name="date" placeholder="1 сентября 2021">
+              </label>
+
+              <div class="count-people">
+                <label class="modal-name">
+                  Взрослые:
+                  <input class="modal-input" type="number" name="adult" min="1" max="10" placeholder="2">
+                </label>
+                <label class="modal-name">
+                  Дети:
+                  <input class="modal-input" type="number" name="children" min="1" max="10" placeholder="1">
+                </label>
+              </div>
+
+              <div class="button-wrapper">
+                <a href="#" class="modal-button-search">Найти</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </header>
     <!--Основное содержимое-->
     <main class="page-main main-container">
