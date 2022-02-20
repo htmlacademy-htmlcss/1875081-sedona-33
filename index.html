@@ -212,30 +212,34 @@
               <span class="visually-hidden">Закрыть окно поиска гостиницы в Седоне.</span>
             </button>
           </div>
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-name">
-              Дата заезда:
-              <input class="modal-input" type="text" name="date" placeholder="27 апреля 2020">
-            </label>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal-form">
+              <div class="dates">
+                <label class="modal-name">
+                  Дата заезда:
+                  <input class="modal-input" type="text" name="date" placeholder="27 апреля 2020">
+                </label>
+                <p class="invalid-form">Мы не можем отправить вас в прошлое.</p>
+                <label class="modal-name">
+                  Дата выезда:
+                  <input class="modal-input" type="text" name="date" placeholder="1 сентября 2021">
+                </label>
+              </div>
 
-            <label class="modal-name">
-              Дата выезда:
-              <input class="modal-input" type="text" name="date" placeholder="1 сентября 2021">
-            </label>
+              <div class="count-people">
+                <label class="modal-name">
+                  Взрослые:
+                  <input class="modal-input" type="number" name="adult" min="1" max="10" placeholder="2">
+                </label>
+                <label class="modal-name">
+                  Дети:
+                  <input class="modal-input" type="number" name="children" min="1" max="10" placeholder="1">
+                </label>
+              </div>
 
-            <div class="count-people">
-              <label class="modal-name">
-                Взрослые:
-                <input class="modal-input" type="number" name="adult" min="1" max="10" placeholder="2">
-              </label>
-              <label class="modal-name">
-                Дети:
-                <input class="modal-input" type="number" name="children" min="1" max="10" placeholder="1">
-              </label>
-            </div>
-
-            <div class="button-wrapper">
-              <button class="modal-button-search" type="submit">Найти</button>
+              <div class="button-wrapper">
+                <button class="modal-button-search" type="submit">Найти</button>
+              </div>
             </div>
           </form>
         </div>
