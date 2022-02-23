@@ -1273,7 +1273,7 @@ body {
 
 /* МОДАЛЬНОЕ ОКНО */
 .fixed-overlay {
-  display: block;
+  display: none;
   position: fixed;
   overflow: auto;
   top: 0;
