@@ -1326,6 +1326,32 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+
+.modal-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.name-date {
+  margin-right: 55px;
+}
+
+.modal-input {
+  padding: 5px 19px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+}
+
+.input-date {
+  width: 420px;
+}
 /*
 .modal-window {
   position: absolute;
@@ -1570,8 +1596,6 @@ input[type="number"]:focus {
 } */
 .tooltip {
   position: absolute;
-  /* margin-top: 4px;
-  margin-left: 2px; */
   width: 25px;
   height: 25px;
 }
