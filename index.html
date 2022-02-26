@@ -205,52 +205,69 @@
     <!-- МОДАЛЬНОЕ ОКНО -->
     <div class="fixed-overlay">
       <div class="modal-window">
-        <div class="modal-container">
-          <div class="modal-header">
+          <button class="modal-close-button" type="button">
+            <span class="visually-hidden">Закрыть окно поиска гостиницы в Седоне.</span>
+          </button>
+          <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-button" type="button">
-              <span class="visually-hidden">Закрыть окно поиска гостиницы в Седоне.</span>
-            </button>
-          </div>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <div class="modal-form">
-              <div class="dates">
-                <label class="modal-name">
-                  Дата заезда:
-                  <input class="modal-input" type="text" name="date" placeholder="27 апреля 2020">
-                </label>
-                <p class="invalid-form">Мы не можем отправить вас в прошлое.</p>
-                <label class="modal-name">
-                  Дата выезда:
-                  <input class="modal-input" type="text" name="date" placeholder="1 сентября 2021">
-                </label>
-                <p class="inform-free-dates">На эти даты есть свободные номера. Пока есть.</p>
-              </div>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="modal-form">
+                <div class="field-group">
+                  <p>
+                    <label for="date-arrival" class="modal-name">Дата заезда:</label>
+                    <input class="modal-input" type="text" id="date-arrival" name="date" value="27 апреля 2020">
+                  </p>
+                  <p class="invalid-form">Мы не можем отправить вас в прошлое.</p>
+                </div>
 
-              <div class="count-people">
-                <label class="modal-name">
-                  Взрослые:
-                  <input class="modal-input" type="number" name="adult" min="1" max="10" placeholder="2">
-                </label>
-                <label class="modal-name">
-                  Дети:
-                  <input class="modal-input" type="number" name="children" min="1" max="10" placeholder="1">
-                </label>
-                <div class="tooltip">
-                  <p class="tooltip-text">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                <div class="field-group">
+                  <p>
+                    <label class="modal-name" for="date-departure" >Дата выезда:</label>
+                    <input class="modal-input" type="text" id="date-departure" name="date" value="1 сентября 2021">
+                  </p>
+                  <p class="inform-free-dates">На эти даты есть свободные номера. Пока есть.</p>
+                </div>
+
+
+                <div class="count-people">
+                  <p class="count-wrapper">
+                    <label class="modal-name" for="adult-people">Взрослые:</label>
+                    <input class="modal-input" type="number" id="adult-people" name="adult" min="1" max="10" placeholder="2">
+                  </p>
+                  <p class="count-wrapper">
+                    <span class="form-label">
+                      <label class="modal-name" for="children-people">Дети:</label>
+                  <span class="tooltip">
+                    <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                      <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_18711_289)">
+                        <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                        <path d="M1 0H0V1H1V0Z" fill="white"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_18711_289">
+                        <rect width="1" height="9" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                    </button>
+                    <span class="tooltip-text" role="tooltip" id="tooltip-label">
+                      Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                    </span>
+                  </span>
+                    </span>
+                    <input class="modal-input" type="number" id="children-people" name="children" min="1" max="10" placeholder="1">
                   </p>
                 </div>
-              </div>
 
-              <div class="button-wrapper">
-                <button class="modal-button-search" type="submit">Найти</button>
+                <div class="button-wrapper">
+                  <button class="modal-button-search" type="submit">Найти</button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </section>
         </div>
       </div>
-    </div>
   </body>
 </html>
 

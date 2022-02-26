@@ -82,48 +82,76 @@
               <legend class="filter-title">Инфраструктура:</legend>
               <ul class="filter-list reset-list">
                 <li class="filter-item">
-                  <input class="control-input visually-hidden" id="pool" type="checkbox" name="checkbox" value="Бассейн" checked>
-                  <label class="control control-active" for="pool">Бассейн</label>
+                  <label class="control">
+                    <input class="control-input visually-hidden" id="pool" type="checkbox" name="checkbox" value="Бассейн" checked>
+                    <span class="control-mark"></span>
+                    <span class="control-label">Бассейн</span>
+                  </label>
+
                 </li>
                 <li class="filter-item">
-                    <input class="control-input visually-hidden" type="checkbox" id="parking" name="checkbox" value="Парковка" checked>
-                    <label class="control control-active" for="parking">Парковка</label>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" id="parking" name="checkbox" value="Парковка" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
+                    </label>
                 </li>
                 <li class="filter-item">
-                    <input class="control-input visually-hidden" type="checkbox" id="wifi" name="checkbox" value="Wi-Fi">
-                    <label class="control" for="wifi">Wi-Fi</label>
+                    <label class="control">
+                      <input class="control-input visually-hidden" type="checkbox" id="wifi" name="checkbox" value="Wi-Fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
+                    </label>
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="filter">
               <legend class="filter-title">Тип жилья:</legend>
               <ul class="filter-list reset-list">
                 <li class="filter-item">
-                  <input class="control-input control-input-type visually-hidden" type="radio" id="hotel" name="radio" value="Гостиница" checked>
-                  <label class="control control-type control-active-type" for="hotel">Гостиница</label>
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="radio" id="hotel" name="radio" value="Гостиница" checked>
+                    <span class="control-mark control-type"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input class="control-input control-input-type visually-hidden" type="radio" id="motel" name="radio" value="Мотель">
-                  <label class="control control-type" for="motel">Мотель</label>
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="radio" id="motel" name="radio" value="Мотель">
+                    <span class="control-mark control-type"></span>
+                    <span class="control-label">Мотель</span>
+                  </label>
                 </li>
                 <li class="filter-item">
-                  <input class="control-input control-input-type visually-hidden" type="radio" id="apartamert" name="radio" value="Апартаменты">
-                  <label class="control control-type" for="apartamert">Апартаменты</label>
+                  <label class="control">
+                    <input class="control-input visually-hidden" type="radio" id="apartamert" name="radio" value="Апартаменты">
+                    <span class="control-mark control-type"></span>
+                    <span class="control-label">Апартаменты</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
 
             <fieldset class="filter">
               <legend class="filter-title title-price">Стоимость, ₽:</legend>
+
               <div class="filter-price">
-                  <input id="from" type="text" name="text" placeholder="от">
-                  <input id="before" type="text" name="text" placeholder="до">
+                <input сlass="filter-input" type="number" name="min-price" value="0" placeholder="от">
+                <input сlass="filter-input" type="number" name="max-price" value="9000" placeholder="от">
               </div>
 
-              <div class="filter-price-controls">
-                  <div class="range"></div>
-                  <label for="from"><span class="visually-hidden">От</span></label>
-                  <label for="before"><span class="visually-hidden">До</span></label>
+
+              <div class="filter-price-toggle">
+                <div class="range-scale">
+                  <div class="range-bar" style="left: 0; width: 227px"></div>
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
+                </div>
               </div>
             </fieldset>
 
