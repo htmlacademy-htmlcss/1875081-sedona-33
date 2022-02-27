@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы Седоны</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" sizes="32x32" type="image/png" href="./images/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body class="page-container">
@@ -24,7 +26,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
           </li>
         </ul>
 
@@ -47,7 +49,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="navigation-link user-link button-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -137,8 +139,8 @@
               <legend class="filter-title title-price">Стоимость, ₽:</legend>
 
               <div class="filter-price">
-                <input сlass="filter-input" type="number" name="min-price" value="0" placeholder="от">
-                <input сlass="filter-input" type="number" name="max-price" value="9000" placeholder="от">
+                <input class="range-input" type="number" name="min-price" min="1" max="9000" value="0" placeholder="от">
+                <input class="range-input" type="number" name="max-price" min="1" max="9000" value="9000" placeholder="от">
               </div>
 
 

@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" sizes="32x32" type="image/png" href="./images/favicons/favicon-32x32.png">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
   <body class="page-container">
-      <!--Шапка с навигацией-->
+    <!--Шапка с навигацией-->
     <header class="page-header">
       <nav class="navigation container">
-        <a class="logo-link" href="index.html">
+        <a class="logo-link">
           <span class="visually-hidden">Переход на главную страницу</span>
           <img class="logo-image" src="./images/content/logo.svg" width="139" height="70" alt="Логотип сайта Седона.">
         </a>
@@ -47,7 +49,7 @@
             </a>
           </li>
           <li class="user-item">
-            <a class="navigation-link user-link button-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-link" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -61,7 +63,6 @@
           <img class="preview-image" src="./images/content/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону.">
         </div>
       </section>
-
       <!--Секция преимуществ-->
       <section class="advantages">
         <h2 class="advantages-title title">Седона — небольшой городок в Аризоне,
@@ -132,7 +133,7 @@
         <h2 class="visually-hidden">Поиск гостиниц в Седоне</h2>
         <p class="title search-title">Заинтересовались?</p>
         <p class="page-text search-text">Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-link button-link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
       <!--Секция подписка на рассылку-->
@@ -215,7 +216,7 @@
                 <div class="field-group">
                   <label class="date-wrapper">
                     <span class="modal-name name-date">Дата заезда:</span>
-                    <input class="modal-input input-date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату">
+                    <input class="modal-input input-date" type="text" name="date" value="27 апреля 2020" placeholder="Укажите дату" required>
                   </label>
                   <p class="inform-text mistake-form">Мы не можем отправить вас в прошлое.</p>
                 </div>
@@ -223,7 +224,7 @@
                 <div class="field-group">
                   <label class="date-wrapper">
                     <span class="modal-name name-date">Дата выезда:</span>
-                    <input class="modal-input input-date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату">
+                    <input class="modal-input input-date" type="text" name="date" value="1 сентября 2021" placeholder="Укажите дату" required>
                   </label>
                   <p class="inform-text success-form">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
@@ -232,7 +233,7 @@
                 <div class="count-people">
                   <label class="count-wrapper count-wrapper-adult">
                     <span class="modal-name">Взрослые:</span>
-                    <input class="modal-input count-input" type="number" name="adult" min="1" max="10" value="2">
+                    <input class="modal-input count-input" type="number" name="adult" min="1" max="10" value="2" required>
                     <button class="minus" type="button"></button>
                     <button class="plus" type="button"></button>
                   </label>
@@ -258,7 +259,7 @@
                     </span>
                   </span>
                     </span>
-                    <input class="modal-input count-input" type="number" id="children-people" name="children" min="1" max="10" value="1">
+                    <input class="modal-input count-input" type="number" id="children-people" name="children" min="1" max="10" value="1" required>
                     <button class="minus" type="button"></button>
                     <button class="plus" type="button"></button>
                   </p>
