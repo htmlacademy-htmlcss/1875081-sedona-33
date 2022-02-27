@@ -116,7 +116,7 @@ body {
 }
 
 .navigation-link:hover {
-  color:#756257;
+  color: #756257;
 }
 
 .navigation-link:active {
@@ -162,15 +162,15 @@ body {
 }
 
 .icon-link:hover svg {
-  color:#756257;
+  color: #756257;
 }
 
 .icon-link:active svg {
-  color:rgba(117, 98, 87, 0.3);
+  color: rgba(117, 98, 87, 0.3);
 }
 
 .navigation-link-favourites:active .number-favourites {
-  color: rgba(255, 255, 255, 0.3);
+  color:  rgba(255, 255, 255, 0.3);
 }
 
 .button-link {
@@ -578,7 +578,6 @@ body {
 }
 
 /* СТРАНИЦА КАТАЛОГА */
-
 .filters {
   padding-top: 41px;
   padding-bottom: 86px;
@@ -1324,9 +1323,9 @@ body {
   z-index: 10;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 
 .modal-window {
   position: relative;
@@ -1573,6 +1572,10 @@ body {
   background-color: #83B3D3;
   border-radius: 50%;
   border: none;
+}
+
+.tooltip-icon {
+  color: #FFFFFF;
 }
 
 .tooltip-text {
