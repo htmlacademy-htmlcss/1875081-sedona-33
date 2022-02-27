@@ -1323,9 +1323,9 @@ body {
   z-index: 10;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal-window {
   position: relative;
