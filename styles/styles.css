@@ -495,7 +495,7 @@ body {
   opacity: 0.3;
 }
 
-.email-field:invalid {
+.error-email {
   outline: 2px solid #FF5757;
 }
 
@@ -1044,6 +1044,7 @@ body {
   line-height: 23px;
   color: #333333;
 
+  background-color: #FFFFFF;
   background-image: url("../images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: 253px center;
