@@ -495,7 +495,7 @@ body {
   opacity: 0.3;
 }
 
-.email-field:invalid {
+.error-email {
   outline: 2px solid #FF5757;
 }
 
@@ -824,6 +824,7 @@ body {
   width: 143px;
   padding: 13px 4px 9px 15px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
@@ -1037,13 +1038,15 @@ body {
 .select-control {
   box-sizing: border-box;
   margin-right: 40px;
-  padding: 12px 107px 9px 18px;
+  padding: 10px 100px 11px 18px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 23px;
   color: #333333;
 
+  background-color: #FFFFFF;
   background-image: url("../images/icons/dropdown.svg");
   background-repeat: no-repeat;
   background-position: 253px center;
@@ -1584,6 +1587,7 @@ body {
 .modal-input {
   box-sizing: border-box;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 40px;
@@ -1714,6 +1718,7 @@ body {
   width: 133px;
   padding: 5px 32px 5px 32px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
 }
 
