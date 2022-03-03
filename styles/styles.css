@@ -96,10 +96,6 @@ body {
   flex-wrap: wrap;
 }
 
-.navigation-item {
-  height: 100%;
-}
-
 .navigation-item:not(:last-child) {
   margin-right: 34px;
 }
@@ -107,7 +103,7 @@ body {
 .navigation-link {
   display: block;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 16px;
   padding-bottom: 18px;
 
   font-size: 20px;
@@ -557,7 +553,7 @@ body {
   grid-template-columns: repeat(3, auto);
   column-gap: 27px;
   align-items: center;
-  margin-right: 256px;
+  margin-right: 61px;
 }
 
 .social-item {
@@ -592,6 +588,7 @@ body {
 
 .tel-academy {
   display: block;
+  width: 720px;
 
   font-size: 40px;
   line-height: 40px;
@@ -1385,8 +1382,8 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  min-width: 55px;
-  height: 55px;
+  width: 55px;
+  min-height: 55px;
   padding: 15px 5px;
 
   font-size: 20px;
