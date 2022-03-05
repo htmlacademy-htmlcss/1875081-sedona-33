@@ -493,10 +493,6 @@ body {
   opacity: 0.3;
 }
 
-/* .email-field:invalid {
-  outline: 2px solid #FF5757;
-} */
-
 .input-error {
   outline: 2px solid #FF5757;
 }
@@ -1618,6 +1614,15 @@ body {
   outline: none;
 }
 
+.modal-input:disabled {
+  opacity: 0.3;
+}
+
+.input-date {
+  width: 420px;
+  padding: 5px 34px 5px 19px;
+}
+
 .input-date:hover {
   background-color: #E6E6E6;
 }
@@ -1631,11 +1636,6 @@ body {
 .modal-input-active {
   background-color: #FFFFFF;
   border: 2px solid #000000;
-}
-
-.input-date {
-  width: 420px;
-  padding: 5px 34px 5px 19px;
 }
 
 .inform-text {
