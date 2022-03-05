@@ -55,7 +55,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -265,6 +266,9 @@ body {
 }
 
 .advantages-item-city {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-area: city;
@@ -273,6 +277,9 @@ body {
 }
 
 .advantages-item-bridge {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-area: bridge;
@@ -295,16 +302,22 @@ body {
 }
 
 .advantages-item-square {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
   grid-area: square;
 }
 
 .advantages-item-road {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: road;
 
   background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-item-tourist {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
   grid-area: tourist;
 }
 
@@ -870,10 +883,6 @@ body {
   opacity: 0.6;
 }
 
-.range-input:first-child:hover + .range-input:last-child {
-  border-left-color:rgba(255, 255, 255, 0.6);
-}
-
 .range-input:focus-within {
   box-shadow: inset 0px 0px 0px 3px #81B3D2,
   0px 0px 0px 3px #81B3D2;
@@ -897,7 +906,8 @@ body {
 .range-input,
 .range-input:hover,
 .range-input:focus {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     -moz-appearance: textfield;
 }
 
@@ -1069,7 +1079,6 @@ body {
   border-radius: 4px;
 
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
 }
 
@@ -1748,7 +1757,8 @@ body {
 .count-input,
 .count-input:hover,
 .count-input:focus {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     -moz-appearance: textfield;
 }
 
